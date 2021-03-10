@@ -9,4 +9,42 @@ body {
   line-height: 1.5;
   letter-spacing: 1px;
 }
+
+header .header__top {
+  background-color: #ff4f81;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 5px 10px;
+}
+
+header .header__top .header__left a {
+  -webkit-transition: .5s all;
+  transition: .5s all;
+  color: #fff !important;
+  text-decoration: none !important;
+}
+
+header .header__top .header__left a:hover {
+  color: #333 !important;
+}
+
+header .header__top .header__left a:first-child {
+  margin-right: 1.25rem;
+}
+
+header .header__top .header__right i {
+  color: #333;
+  -webkit-transition: .5s all;
+  transition: .5s all;
+  font-size: 1.5rem;
+}
+
+header .header__top .header__right i:hover {
+  border: 1px solid #fff;
+  color: #fff;
+}
 /*# sourceMappingURL=main.css.map */
