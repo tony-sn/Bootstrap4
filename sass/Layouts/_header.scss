@@ -1,30 +1,88 @@
-header{
-    .header__top{
+header {
+    .header__top {
         background-color: $color-pink-0;
         display: flex;
         justify-content: space-between;
         padding: $pd-0 $pd-1;
-        .header__left{
-            a{
-                transition: .5s all;
-                color: $color-white-0!important;
-                text-decoration: none!important;
-                &:hover{
-                    color: $color-black-0!important;
+        .header__left {
+            a {
+                transition: 0.5s all;
+                color: $color-white-0 !important;
+                text-decoration: none !important;
+                &:hover {
+                    color: $color-black-0 !important;
                 }
-                &:first-child{
+                &:first-child {
                     margin-right: 1.25rem;
                 }
             }
         }
-        .header__right{
-            i{
+        .header__right {
+            i {
                 color: $color-black-0;
-                transition: .5s all;
+                transition: 0.5s all;
                 font-size: 1.5rem;
-                &:hover{
+                &:hover {
                     border: 1px solid $color-white-0;
                     color: $color-white-0;
+                }
+            }
+        }
+    }
+    .myNavbar {
+        .navbar-brand {
+            text-align: center;
+            i {
+                transform: skewX(-10deg);
+            }
+            p:first-child {
+                @include styleText($color-black-0, $fs-2, $fw-1);
+                margin-bottom: 0;
+            }
+            p:last-child {
+                @include styleText($color-pink-0, $fs-0, $fw-1);
+                letter-spacing: 3px;
+            }
+        }
+        #navbarInstruction {
+            .navbar-nav {
+                margin-left: auto;
+                .nav-item {
+                    margin: 0 $mg-0;
+                    &::after {
+                        content: "";
+                        width: 0;
+                        height: 2px;
+                        background-color: $color-pink-0;
+                        display: block;
+                        transition: 0.5s all;
+                    }
+                    &:hover::after,
+                    &.active::after {
+                        width: 100%;
+                    }
+                    .nav-link {
+                        @include styleText($color-black-0, $fs-1, $fw-1);
+                        text-transform: uppercase;
+                        transition: 0.5s all;
+                    }
+                    &.active .nav-link,
+                    &:hover .nav-link {
+                        color: $color-pink-0;
+                    }
+                }
+            }
+            .dropdown-menu {
+                background-color: $color-black-1;
+                border: 1px solid $color-black-1;
+                .dropdown-item {
+                    color: $color-white-0;
+                    transition: 0.5s all;
+                    &:hover,
+                    &:focus {
+                        background-color: transparent;
+                        color: $color-pink-0;
+                    }
                 }
             }
         }

@@ -22,8 +22,8 @@ header .header__top {
 }
 
 header .header__top .header__left a {
-  -webkit-transition: .5s all;
-  transition: .5s all;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
   color: #fff !important;
   text-decoration: none !important;
 }
@@ -38,13 +38,88 @@ header .header__top .header__left a:first-child {
 
 header .header__top .header__right i {
   color: #333;
-  -webkit-transition: .5s all;
-  transition: .5s all;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
   font-size: 1.5rem;
 }
 
 header .header__top .header__right i:hover {
   border: 1px solid #fff;
   color: #fff;
+}
+
+header .myNavbar .navbar-brand {
+  text-align: center;
+}
+
+header .myNavbar .navbar-brand i {
+  -webkit-transform: skewX(-10deg);
+          transform: skewX(-10deg);
+}
+
+header .myNavbar .navbar-brand p:first-child {
+  color: #333;
+  font-size: 36px;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+
+header .myNavbar .navbar-brand p:last-child {
+  color: #ff4f81;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 3px;
+}
+
+header .myNavbar #navbarInstruction .navbar-nav {
+  margin-left: auto;
+}
+
+header .myNavbar #navbarInstruction .navbar-nav .nav-item {
+  margin: 0 15px;
+}
+
+header .myNavbar #navbarInstruction .navbar-nav .nav-item::after {
+  content: "";
+  width: 0;
+  height: 2px;
+  background-color: #ff4f81;
+  display: block;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
+header .myNavbar #navbarInstruction .navbar-nav .nav-item:hover::after, header .myNavbar #navbarInstruction .navbar-nav .nav-item.active::after {
+  width: 100%;
+}
+
+header .myNavbar #navbarInstruction .navbar-nav .nav-item .nav-link {
+  color: #333;
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
+header .myNavbar #navbarInstruction .navbar-nav .nav-item.active .nav-link,
+header .myNavbar #navbarInstruction .navbar-nav .nav-item:hover .nav-link {
+  color: #ff4f81;
+}
+
+header .myNavbar #navbarInstruction .dropdown-menu {
+  background-color: rgba(0, 0, 0, 0.6);
+  border: 1px solid rgba(0, 0, 0, 0.6);
+}
+
+header .myNavbar #navbarInstruction .dropdown-menu .dropdown-item {
+  color: #fff;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
+header .myNavbar #navbarInstruction .dropdown-menu .dropdown-item:hover, header .myNavbar #navbarInstruction .dropdown-menu .dropdown-item:focus {
+  background-color: transparent;
+  color: #ff4f81;
 }
 /*# sourceMappingURL=main.css.map */
