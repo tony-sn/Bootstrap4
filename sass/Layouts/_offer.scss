@@ -1,0 +1,28 @@
+.offer {
+    & heading > p {
+        text-transform: capitalize;
+    }
+    .offer__content {
+        .offer__item {
+            padding: $pd-2 + 5 $pd-3;
+            box-shadow: 0 1px 8px 0 rgba(158, 158, 158, 0.75);
+            text-align: center;
+            background-color: $color-white-0;
+            transition: all 0.5s;
+            i {
+                color: $color-pink-0;
+            }
+            h3 {
+                @include styleText($color-black-0, $fs-1 + 4, 500);
+                margin: $mg-1 0 $mg-1 - 5;
+            }
+            p {
+                @include styleText($color-gray-0, $fs-1 - 2, $fw-0);
+                letter-spacing: 0.5px;
+            }
+            &:hover {
+                background-color: $color-green-0;
+            }
+        }
+    }
+}

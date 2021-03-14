@@ -1,0 +1,24 @@
+.offer--col {
+    padding: $pd-2 - 5;
+}
+
+.feedback__content {
+    .owl-theme {
+        .owl-dots {
+            .owl-dot {
+                span {
+                    background-color: $color-pink-0;
+                    opacity: 0.5;
+                }
+                &.active span,
+                &:hover span {
+                    background-color: $color-pink-0;
+                    opacity: 1;
+                }
+                &:focus {
+                    outline: 0;
+                }
+            }
+        }
+    }
+}

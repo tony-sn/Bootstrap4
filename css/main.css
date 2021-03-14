@@ -10,6 +10,25 @@ body {
   letter-spacing: 1px;
 }
 
+.offer--col {
+  padding: 15px;
+}
+
+.feedback__content .owl-theme .owl-dots .owl-dot span {
+  background-color: #ff4f81;
+  opacity: 0.5;
+}
+
+.feedback__content .owl-theme .owl-dots .owl-dot.active span,
+.feedback__content .owl-theme .owl-dots .owl-dot:hover span {
+  background-color: #ff4f81;
+  opacity: 1;
+}
+
+.feedback__content .owl-theme .owl-dots .owl-dot:focus {
+  outline: 0;
+}
+
 header .header__top {
   background-color: #ff4f81;
   display: -webkit-box;
@@ -152,6 +171,167 @@ header .myNavbar #navbarInstruction .dropdown-menu .dropdown-item:hover, header 
   font-weight: 300;
 }
 
+.welcome__content > p {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 15px;
+  line-height: 1.8em;
+  color: #999;
+  letter-spacing: 1px;
+  padding: 1rem 0 5rem;
+}
+
+.welcome__content .welcome__courses .col-4 {
+  padding: 2rem !important;
+}
+
+.welcome__content .welcome__courses .col-4 .welcome__item h3 {
+  color: #ff4f81;
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin: 1rem 0;
+}
+
+.welcome__content .welcome__courses .col-4 .welcome__item h4 {
+  color: #333;
+  font-size: 16px;
+  font-weight: bold;
+  margin: 1rem 0 0.2rem;
+}
+
+.welcome__content .welcome__courses .col-4 .welcome__item p {
+  color: #999;
+  font-size: 15px;
+  font-weight: normal;
+  margin: 10px 0 0;
+}
+
+.ourStats {
+  background: url(../../img/banner2.jpg) fixed;
+  background-size: cover;
+}
+
+.ourStats .heading p::after {
+  background-color: #fff;
+}
+
+.ourStats__content {
+  text-align: center;
+  color: #fff;
+}
+
+.ourStats__content .ourStats__item h3 {
+  color: #ff4f81;
+  font-size: 1.3rem;
+  font-weight: bold;
+  letter-spacing: 3px;
+  margin: 30px 0 20px;
+}
+
+.ourStats__content .ourStats__item p {
+  font-size: 3rem;
+  letter-spacing: 2px;
+  font-weight: 300;
+}
+
+.offer heading > p {
+  text-transform: capitalize;
+}
+
+.offer .offer__content .offer__item {
+  padding: 25px 40px;
+  -webkit-box-shadow: 0 1px 8px 0 rgba(158, 158, 158, 0.75);
+          box-shadow: 0 1px 8px 0 rgba(158, 158, 158, 0.75);
+  text-align: center;
+  background-color: #fff;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.offer .offer__content .offer__item i {
+  color: #ff4f81;
+}
+
+.offer .offer__content .offer__item h3 {
+  color: #333;
+  font-size: 20px;
+  font-weight: 500;
+  margin: 25px 0 20px;
+}
+
+.offer .offer__content .offer__item p {
+  color: #999;
+  font-size: 14px;
+  font-weight: normal;
+  letter-spacing: 0.5px;
+}
+
+.offer .offer__content .offer__item:hover {
+  background-color: #12ccc3;
+}
+
+.feedback {
+  background: url(../img/banner3.jpg) center fixed;
+  background-size: cover;
+}
+
+.feedback__content {
+  -webkit-box-shadow: 0 1px 7px #8e8e8e;
+          box-shadow: 0 1px 7px #8e8e8e;
+  background-color: rgba(0, 0, 0, 0.47);
+  padding: 16px;
+}
+
+.feedback__content .item {
+  color: #fff;
+  padding: 16px;
+}
+
+.feedback__content .item .feedback__top {
+  padding: 16px 24px;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.47);
+  position: relative;
+}
+
+.feedback__content .item .feedback__top::after {
+  content: "";
+  border-top: 9px solid rgba(0, 0, 0, 0.47);
+  border-right: 9px solid transparent;
+  border-left: 9px solid transparent;
+  display: block;
+  position: absolute;
+  bottom: -7%;
+  left: 28%;
+}
+
+.feedback__content .item .feedback__bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 55%;
+  margin: 2rem auto 0;
+}
+
+.feedback__content .item .feedback__bottom img {
+  width: 28%;
+  display: inline-block;
+}
+
+.feedback__content .item .feedback__bottom .feedback__name h5 {
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.feedback__content .item .feedback__bottom .feedback__name p {
+  margin: 0;
+  color: #ff4f81;
+}
+
 .myBtn {
   padding: 11px 20px;
   color: #fff;
@@ -165,5 +345,48 @@ header .myNavbar #navbarInstruction .dropdown-menu .dropdown-item:hover, header 
   color: #fff;
   background-color: #ff4f81;
   border-color: #ff4f81;
+}
+
+.heading {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.heading--white p {
+  color: #fff !important;
+}
+
+.heading--white > p::after {
+  background-color: #fff !important;
+}
+
+.heading h2 {
+  color: #ff4f81;
+  font-size: 40px;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+}
+
+.heading p {
+  letter-spacing: 4px;
+  color: #333;
+  font-size: 17px;
+}
+
+.heading p::after {
+  content: "";
+  width: 70px;
+  height: 2px;
+  background-color: #333;
+  display: block;
+  margin: 20px auto;
+}
+
+.section {
+  padding: 5rem 0;
+}
+
+.section i {
+  font-size: 2.5rem;
 }
 /*# sourceMappingURL=main.css.map */

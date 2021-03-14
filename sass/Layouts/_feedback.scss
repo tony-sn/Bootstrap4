@@ -1,0 +1,49 @@
+.feedback {
+    background: url(../img/banner3.jpg) center fixed;
+    background-size: cover;
+    &__content {
+        box-shadow: 0 1px 7px $color-gray-1;
+        background-color: $color-black-2;
+        padding: $pd-2 - 4;
+        .item {
+            color: $color-white-0;
+            padding: $pd-2 - 4;
+            .feedback__top {
+                padding: $pd-2 - 4 $pd-2 + 4;
+                border-radius: 5px;
+                background-color: $color-black-2;
+                position: relative;
+                &::after {
+                    content: "";
+                    border-top: 9px solid $color-black-2;
+                    border-right: 9px solid transparent;
+                    border-left: 9px solid transparent;
+                    display: block;
+                    position: absolute;
+                    bottom: -7%;
+                    left: 28%;
+                }
+            }
+            .feedback__bottom {
+                display: flex;
+                justify-content: center;
+                width: 55%;
+                margin: 2rem auto 0;
+                img {
+                    width: 28%;
+                    display: inline-block;
+                }
+                .feedback__name {
+                    h5 {
+                        font-size: 1.1rem;
+                        font-weight: $fw-3;
+                    }
+                    p {
+                        margin: 0;
+                        color: $color-pink-0;
+                    }
+                }
+            }
+        }
+    }
+}

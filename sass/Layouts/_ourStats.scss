@@ -1,0 +1,23 @@
+.ourStats {
+    background: url(../../img/banner2.jpg) fixed;
+    background-size: cover;
+    .heading p::after {
+        background-color: $color-white-0;
+    }
+    &__content {
+        text-align: center;
+        color: $color-white-0;
+        .ourStats__item {
+            h3 {
+                @include styleText($color-pink-0, 1.3rem, $fw-3);
+                letter-spacing: 3px;
+                margin: $mg-1 + 5 0 $mg-0 + 5;
+            }
+            p {
+                font-size: 3rem;
+                letter-spacing: 2px;
+                font-weight: 300;
+            }
+        }
+    }
+}
