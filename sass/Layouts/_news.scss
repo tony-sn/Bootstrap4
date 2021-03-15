@@ -1,7 +1,7 @@
 .news {
     .news__content {
         h3 {
-            font-size: $fs-1 + 4;
+            font-size: 1.2rem;
             font-weight: $fw-3;
         }
         a {
@@ -21,9 +21,10 @@
             @include styleText($color-gray-0, 0.9rem, $fw-0);
             margin-top: 1rem;
             line-height: 1.8rem;
+            letter-spacing: normal;
         }
         img {
-            border: 2px solid $color-gray-1;
+            border: 2px solid #dedede;
         }
     }
 }

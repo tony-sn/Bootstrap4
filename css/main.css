@@ -443,7 +443,7 @@ footer .footer__bottom a:hover {
 }
 
 .news .news__content h3 {
-  font-size: 20px;
+  font-size: 1.2rem;
   font-weight: bold;
 }
 
@@ -472,10 +472,11 @@ footer .footer__bottom a:hover {
   font-weight: normal;
   margin-top: 1rem;
   line-height: 1.8rem;
+  letter-spacing: normal;
 }
 
 .news .news__content img {
-  border: 2px solid #8e8e8e;
+  border: 2px solid #dedede;
 }
 
 .myBtn {
