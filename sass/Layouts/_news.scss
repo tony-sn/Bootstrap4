@@ -1,0 +1,29 @@
+.news {
+    .news__content {
+        h3 {
+            font-size: $fs-1 + 4;
+            font-weight: $fw-3;
+        }
+        a {
+            text-decoration: none;
+            color: $color-black-0;
+            letter-spacing: 1px;
+            transition: 0.5s all;
+            &:hover {
+                color: $color-pink-0;
+            }
+        }
+        h4 {
+            @include styleText($color-pink-0, $fs-1, $fw-3);
+            margin: $mg-0 + 1 0;
+        }
+        p {
+            @include styleText($color-gray-0, 0.9rem, $fw-0);
+            margin-top: 1rem;
+            line-height: 1.8rem;
+        }
+        img {
+            border: 2px solid $color-gray-1;
+        }
+    }
+}

@@ -1,0 +1,16 @@
+#myModal {
+    .modal-dialog {
+        max-width: 600px;
+        h5 {
+            @include styleText($color-pink-0, $fs-2 - 5, $fw-3);
+        }
+        .modal-body {
+            p {
+                font-size: $fs-1 - 2;
+                color: #777;
+                line-height: 1.8em;
+                padding: $pd-2 0;
+            }
+        }
+    }
+}

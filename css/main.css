@@ -29,6 +29,10 @@ body {
   outline: 0;
 }
 
+.news__content .row:last-child {
+  margin-top: 5rem;
+}
+
 header .header__top {
   background-color: #ff4f81;
   display: -webkit-box;
@@ -142,6 +146,106 @@ header .myNavbar #navbarInstruction .dropdown-menu .dropdown-item:hover, header 
   color: #ff4f81;
 }
 
+footer {
+  background-color: #141515;
+  letter-spacing: 1px;
+}
+
+footer .footer__top h3,
+footer .footer__top label {
+  color: #ff4f81;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+}
+
+footer .footer__top p {
+  color: #8e8e8e;
+  font-size: 15px;
+  font-weight: normal;
+  margin-bottom: 2rem;
+  line-height: 2em;
+}
+
+footer .footer__top .footer__link,
+footer .footer__top .footer__contact {
+  margin-bottom: 1rem;
+}
+
+footer .footer__top .footer__link i,
+footer .footer__top .footer__contact i {
+  color: #ff4f81;
+  margin-right: 1rem;
+  font-size: 1rem;
+}
+
+footer .footer__top .footer__link a,
+footer .footer__top .footer__link .footer__contact a,
+footer .footer__top .footer__contact a,
+footer .footer__top .footer__contact .footer__contact a {
+  color: #8e8e8e;
+  font-size: 15px;
+  font-weight: normal;
+  text-transform: none;
+  line-height: 1.5rem;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+footer .footer__top .footer__contact i {
+  width: 32px;
+  height: 32px;
+  border: 1px solid #4b4b50;
+  color: white;
+  line-height: 32px;
+  text-align: center;
+  margin-right: 1rem;
+}
+
+footer .footer__top .footer__form {
+  margin-top: 3rem;
+}
+
+footer .footer__top .footer__form input {
+  padding: 14px;
+  border-radius: 0;
+  border: none;
+  color: #888;
+  height: auto;
+}
+
+footer .footer__top .footer__form button {
+  padding: 12px 35px;
+  border-radius: 0;
+  background-color: #ff4f81;
+  color: white;
+  outline: none;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
+footer .footer__top .footer__form button:hover {
+  background-color: #ec1955;
+}
+
+footer .footer__bottom {
+  background-color: #0f0f10;
+  text-align: center;
+  padding: 16px 0;
+  color: #fff;
+}
+
+footer .footer__bottom a {
+  text-decoration: none;
+  color: #ff4f81;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+footer .footer__bottom a:hover {
+  color: #fff;
+}
+
 #myCarousel .carousel-item .carousel-overlay {
   position: absolute;
   top: 0;
@@ -247,6 +351,7 @@ header .myNavbar #navbarInstruction .dropdown-menu .dropdown-item:hover, header 
   background-color: #fff;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
+  cursor: pointer;
 }
 
 .offer .offer__content .offer__item i {
@@ -322,14 +427,55 @@ header .myNavbar #navbarInstruction .dropdown-menu .dropdown-item:hover, header 
   display: inline-block;
 }
 
+.feedback__content .item .feedback__bottom .feedback__name {
+  margin-left: 2px;
+}
+
 .feedback__content .item .feedback__bottom .feedback__name h5 {
   font-size: 1.1rem;
   font-weight: bold;
+  margin-bottom: 0;
 }
 
 .feedback__content .item .feedback__bottom .feedback__name p {
   margin: 0;
   color: #ff4f81;
+}
+
+.news .news__content h3 {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.news .news__content a {
+  text-decoration: none;
+  color: #333;
+  letter-spacing: 1px;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
+.news .news__content a:hover {
+  color: #ff4f81;
+}
+
+.news .news__content h4 {
+  color: #ff4f81;
+  font-size: 16px;
+  font-weight: bold;
+  margin: 16px 0;
+}
+
+.news .news__content p {
+  color: #999;
+  font-size: 0.9rem;
+  font-weight: normal;
+  margin-top: 1rem;
+  line-height: 1.8rem;
+}
+
+.news .news__content img {
+  border: 2px solid #8e8e8e;
 }
 
 .myBtn {
@@ -388,5 +534,22 @@ header .myNavbar #navbarInstruction .dropdown-menu .dropdown-item:hover, header 
 
 .section i {
   font-size: 2.5rem;
+}
+
+#myModal .modal-dialog {
+  max-width: 600px;
+}
+
+#myModal .modal-dialog h5 {
+  color: #ff4f81;
+  font-size: 31px;
+  font-weight: bold;
+}
+
+#myModal .modal-dialog .modal-body p {
+  font-size: 14px;
+  color: #777;
+  line-height: 1.8em;
+  padding: 20px 0;
 }
 /*# sourceMappingURL=main.css.map */
